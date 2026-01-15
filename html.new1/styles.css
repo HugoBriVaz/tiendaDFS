@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+#encabezado {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.descripcion {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Proyectos */
+#proyectos {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+#proyectos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.proyecto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.proyecto img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.proyecto a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contacto */
+#contacto {
+    padding: 30px;
+    background-color: #e5e7eb;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+#pie {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#pie a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+    #proyectos {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .proyecto {
+        width: 30%;
+    }
+}
+.proyecto img {
+    width: 100%;
+    height: auto;
+    max-width: 280px; /* Puedes ajustar este valor si deseas otro tamaño específico */
+    max-height: 180px; /* Este tamaño ayuda a hacer más uniforme la altura */
+    border-radius: 8px;
+    object-fit: cover; /* Esto ayuda a que las imágenes llenen el espacio correctamente */
+}
